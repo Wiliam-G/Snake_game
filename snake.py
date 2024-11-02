@@ -18,7 +18,7 @@ class Snake():
         new_segment = Turtle("square")
         new_segment.color("white")
         new_segment.penup()
-        new_segment.goto(x=self.x_position, y=0)
+        new_segment.goto(position)
         self.segments.append(new_segment)
         self.x_position -= 20
 
