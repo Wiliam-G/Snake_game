@@ -10,6 +10,12 @@ class Snake():
         for segment in range(3):
             self.add_segment((0,0))
 
+    def reset(self):
+        for seg in self.segments:
+            seg.goto(1000,1000)
+        self.segments.clear()
+        self.create_snake()
+
     def extend(self):
         #add a new segment
         self.add_segment(self.segments[-1].position())
